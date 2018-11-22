@@ -6,3 +6,75 @@ body {
 a {
   color: #00B7FF;
 }
+
+h1 {
+  padding: 0ex 1ex;
+  background-color: silver;
+  box-shadow: .1ex .1ex;
+}
+
+#xss-profile-edit .profile {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#xss-profile-edit .profile li {
+  min-height: 2em;
+  margin: 1ex 0ex;
+}
+
+#xss-profile-edit .profile label  {
+  width: 8em;
+  display: inline-block;
+  text-align: right;
+  vertical-align: top;
+}
+
+#xss-profile-edit .profile input {
+  width: 15em;
+}
+
+#xss-profile-edit .profile textarea {
+  width: 15em;
+}
+
+#xss-profile-edit .profile .introduction {
+  min-height: 3em;
+}
+
+#xss-profile-edit form button {
+  margin-left: 10.5em;
+}
+
+#xss-profile-preview .profile {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#xss-profile-preview .profile li {
+  min-height: 2em;
+  margin: 1ex 0ex;
+}
+
+#xss-profile-preview .profile label  {
+  width: 8em;
+  display: inline-block;
+  text-align: right;
+  vertical-align: top;
+}
+
+#xss-profile-preview .profile p {
+  display: inline-block;
+  margin: 0ex;
+  padding: 0ex;
+}
+
+#xss-profile-preview .profile .introduction {
+  min-height: 3em;
+}
+
+#xss-profile-preview form button {
+  margin-left: 10.5em;
+}

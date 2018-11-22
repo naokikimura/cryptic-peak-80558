@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>プロフィールの編集</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body id="xss-profile-preview">
+    <h1>プロフィールの編集</h1>
+    <form action="./update" method="post">
+      <ul class="profile">
+        <li>
+          <label for="profile-name">名前</label>
+          <p id="profile-name" class="name"><%- profile.name %></p>
+        </li>
+        <li>
+          <label for="profile-email">メールアドレス</label>
+          <p id="profile-email" class="email"><%- profile.email %></p>
+        </li>
+        <li>
+          <label for="profile-introduction">自己紹介</label>
+          <p id="profile-introduction" class="introduction"><%- profile.introduction %></p>
+        </li>
+      </ul>
+      <button type="submit">変更を保存</button>
+    </form>
+  </body>
+</html>
