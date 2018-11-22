@@ -13,6 +13,7 @@ router.post('/preview', (req, res, next) => {
     introduction: req.body.introduction
   };
   req.session.profile = profile;
+  res.setHeader('X-XSS-Protection', 0);
   res.render('xss/profile/preview', { profile: profile });
 });
 
