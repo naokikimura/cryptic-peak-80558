@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>E!オークション</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body id="xss-login">
+    <h1>E!オークション</h1>
+    <form action="login" method="post" id="login">
+      <div class="input_id">
+       ID <input type="text" name="ID" value="<%- login.id %>" />
+      </div>
+      <div class="input_pw">
+        PW <input type="password" name="PW" />
+      </div>
+      <button type="submit">ログイン</button>
+     </form>
+  </body>
+</html>

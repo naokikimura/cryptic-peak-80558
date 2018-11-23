@@ -78,3 +78,23 @@ h1 {
 #xss-profile-preview form button {
   margin-left: 10.5em;
 }
+
+#xss-login form {
+  position: relative;
+}
+
+#xss-login form > div {
+  margin: 1ex;
+  width: 2em;
+  text-align: right;
+}
+
+#xss-login form > div > input {
+  left: 3.5em;
+  position: absolute;
+}
+
+#xss-login form > button {
+  left: 3.5em;
+  position: absolute;
+}

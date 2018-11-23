@@ -24,6 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/xss/profile', require('./routes/xss/profile'));
+app.use('/xss/login', require('./routes/xss/login'));
 app.use('/secure/profile', require('./routes/secure/profile'));
 
 // catch 404 and forward to error handler
