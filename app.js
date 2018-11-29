@@ -26,6 +26,7 @@ app.use('/users', usersRouter);
 app.use('/xss/profile', require('./routes/xss/profile'));
 app.use('/xss/login', require('./routes/xss/login'));
 app.use('/secure/profile', require('./routes/secure/profile'));
+app.use('/sqli/books', require('./routes/sqli/books'));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

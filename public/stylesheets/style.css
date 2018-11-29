@@ -92,9 +92,11 @@ h1 {
 #xss-login form > div > input {
   left: 3.5em;
   position: absolute;
+  width: 12em;
 }
 
 #xss-login form > button {
   left: 3.5em;
   position: absolute;
+  width: 12.5em;
 }

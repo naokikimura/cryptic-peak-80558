@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>著者 "<%= q %>" の検索結果 | BOOKSTORE</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <p>BOOKSTORE</p>
+    <h1>著者 "<%= q %>" の検索結果</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>販売日</th>
+          <th>著者</th>
+          <th>書名</th>
+        </tr>
+      </thead>
+      <tbody>
+      <% books.forEach(book => { %>
+        <tr>
+          <td><%= book.date.toLocaleDateString("en-US") %></td>
+          <td><%= book.author %></td>
+          <td><%= book.title %></td>
+        </tr>
+      <% }); %>
+      </tbody>
+    </table>
+  </body>
+</html>
